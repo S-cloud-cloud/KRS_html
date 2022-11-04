@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: khaki;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .box{ 
+            
+            
+            border: 4px red;
+            width: 72px;
+            height: 72px;
+            
+
+        }
+        #box1{
+            border: 40px;
+        }
+         #box3{   /*relative shifts in relation to box2. */
+            position: relative;
+            left: 3px;
+            background-color: aquamarine;
+        }
+        #box2{  /*absolute shifts box2 in respect to parent*/
+            position:absolute;
+            bottom:30px;
+            border: 4px darkgreen;
+            background-color: bisque;
+        }
+         #box4{ /* it will make a fixed box  */
+            position: fixed;
+            right: 4px;
+            bottom: 2px;
+            background-color: aqua;
+        }
+         div.sticky {  /*it keeps it position fixed relative to scroll position*/
+            
+            position:sticky;
+            top:0;
+            background-color: yellow;
+            padding: 50px;
+            font-size: 20px;
+        }
+        .c{
+            float:right;
+        }
+        .c1{
+               background-color: aqua;
+               float: left;
+        }
+        .c2{
+            background-color: blueviolet;
+            float:left;
+        }
+    .c3{
+                background-color: lavender;
+                float:left;
+      }
+        .c1,
+        .c2,
+        .c3{
+            float:inherit;
+        }
+        /* div { */
+            /* float:left; */
+        /* } */
+    </style>
+</head>
+<body>
+    <div>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dignissimos consectetur impedit commodi accusamus placeat dolore et odit quisquam alias officiis earum, laborum at, nam consequatur quos? Ut, itaque maxime!
+    
+    </div>
+    using class and float keyword <br>
+    float inheritance <br>
+    <div class="c">
+    <div  class="c1">zai</div>
+    <div  class="c2">poets</div>
+    <div class="c3">writers</div> </div>
+
+    <hr>
+
+    <h4>2.position property : it can be relative as well</h4> <br>
+    <div class="container">
+    <div  class="box" id="box1">1</div>
+    <div  class="box" id="box2">2</div>
+   <div class="box" id="box3">chat with us</div>
+     <div class="box" id="box4">4</div>
+</div>
+ 
+
+</body>
+</html>
