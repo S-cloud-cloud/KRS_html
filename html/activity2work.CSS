@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 a:hover{
 color: blue;
 
 }
 button:hover{
     color: lavenderblush;
+=======
+a:hover{
+color: blue;
+
+}
+button:hover{
+    color: lavenderblush;
+>>>>>>> 4887ab792076f732abb8ac272cf27c0442992ecd
 }

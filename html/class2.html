@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -179,4 +180,187 @@
         </tr>
     </table>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>LIST ELEMENTS : 1.UNORDERED LIST & 2.ORDERED LIST</h4>
+    creating list <hr>
+    ul means unordered list i.e. no priority and ol means ordered list it has a priority <br>
+    using ul and list tag
+    <ul><li>
+        carrot
+    </li>
+<li>
+    ginger
+</li>
+    </ul> <br>
+    type keyword and use square circle disc effect
+    <ul type="square">
+       <li>
+        beetroot
+       </li>
+       <li>
+        ginger
+       </li>
+       <li>
+        mangos
+       </li>
+
+    </ul><br>
+    ol means ordered list <br>
+    <ol type="i">
+        <li>
+            type roman no 
+        </li>
+        <li>
+            now we can also use d start
+        </li>
+    </ol><br>
+    now using start keyword
+    <ol type ="1" start="4">
+        <li>
+            here i am starting from 4 
+        </li>
+<li>
+    similarly we can use alphabets
+</li>
+    </ol>
+    <br>
+ <h4>>3.list within list :now using ul under ol list <br> nesting of lists <br></h4
+ <ol type ="1">
+    <li>
+        Vegetables:
+        <ul type="circle">
+       <li>
+        .onion
+         </li>
+         <li>
+            carrot
+         </li>
+        </ul>
+    </li>
+    <li> Fruits
+        <ol type="i">
+           <li>
+            mangos
+           </li>
+        <li>
+            guava
+        </li>
+        </ol>
+    </li>
+
+ </ol> <br>
+ now using description list : dl then <br>
+ dt for main topic and dd for description of the topic<br>
+ <h4>
+    <dl>
+        <dt><i>coffee</i></dt>
+        <dd><b>cold coffee is my fav</b></dd>
+    </dl>
+ </h4>
+ <hr>
+ <h3>Form elements</h3><br>
+ 1.input tag and it's type : <br>
+ 2.lable and for & id tag <br>
+ 3.mentioning same radio tag then u have to give same name in name tag for both options such that only one option can be selected for eg either male or female and not both in gender. <br>
+ 4.if we will give two diff names in the radio's name tag(u can't use anything else instead the name tag ) the browser will identify them as two diff things and will allow selection of both <br>
+ 5.now using select and option tag we can let the compiler know or browser know what it's targeting in the lable keyword the name will link it all to id the lable is targeting and then we can select diff options using it <br>
+ 6.textarea <br>
+ 7.placeholder : inside input tag : this tag just says what has to be written in it and can be overlapped it's for the ease of the user <br>
+ 8.keyword required:inside input tag to show the imp fields in the form that must be filled before submission <br>
+ 9.button tag for the submit option <br>
+ 10fieldset : used to give border and border title : it is opened just after the form tag and closed just before the form closing tag  <br>
+ 11.event is any interaction of user with the webpage : alert stops all the working code html,css,javascript etc and first executes the onclick message and executes the event <br>
+<form>
+    <fieldset>
+        <legend>DETAILS:REGISTRATION FORM</legend>
+    
+    <label for="name" ><b>username :</b></label>
+    <input type="text"> <br>
+     <b>password :</b>
+     <input type="password" id="name" placeholder ="one cap and one char must be added" required> <br>
+     <b>gender :</b>
+     <input type="radio" name="r1" />male  
+     <input type="radio" name="r1" />female
+     <input type="radio" name="r1" />others
+<br>
+   <label for="food"><b>favourite food :</b></label>
+   <select  id="Food">
+    <option value="">INDIAN</option>
+    <option value="">CHINESE</option>
+   </select>
+   <br>
+   <label for="name"><b>Which year :</b></label>
+   <select>
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+
+   </select> <br>
+
+   <b>Educational qualification :</b>
+   <input type="checkbox" />12+
+   <input type="checkbox"  />12
+   <input type="checkbox" />10+
+   <input type="checkbox"  />10 <br>
+  
+   <label for="name"><b>Address:</b></label>
+   <textarea id="addr"  cols="10"  rows="3"placeholder="enter ur address here :" required ></textarea> 
+   <!-- the end of opening and closing tag of textarea should be written without any space between them -->
+       <br>
+    <label><b>date of birth :</b></label> <br>
+    <input type="date"><br>
+    
+    <label for="name">EMAIL:</label> 
+    <input type="Mail"> <br>
+    
+    <button class="button" onclick ="alert('HELLO')" type="submit">
+    welcome</button>  <br>
+    <button type="Submit">SUBMIT</button> 
+    <button type="reset">CLEAR</button>
+
+</fieldset>
+</form>
+
+    <table  border="1" width="50">
+       <tr border="1">
+            <th><font color="blue" > vegetables </font></th>
+            <th><font color="blue">fruits</font></th>
+             <th><font color="blue" >flowers</font></th>
+        </tr>
+        <tr>
+            <td> ginger🙂</td>
+            <td> mango</td>
+            <td> lily</td>
+        </tr>
+    </table> <br>
+    now using rowspan and colspan <br>
+    <table border="1" width="50">
+        <tr>
+            <th><font color="blue" rowspan="2" colspan="2" > vegetables </font></th>
+            <th><font color="blue" colspan="2">fruits</font></th>
+             <th><font color="blue" >flowers</font></th>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2"> ginger</td>
+            <td colspan="2"> mango</td>
+            <td> lily</td>
+        </tr>
+        <tr>
+            <td>potato</td>
+            <td>strawberries</td>
+            <td>clove</td>
+        </tr>
+    </table>
+</body>
+>>>>>>> 4887ab792076f732abb8ac272cf27c0442992ecd
 </html>

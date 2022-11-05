@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,4 +57,64 @@
 </div>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main{
+            width: 100%;
+            height: 300px;
+            border: 1px solid blue;
+            display:flex;
+            /* flex-wrap: wrap-reverse; */
+            /*justify content will bring it in center*/
+            justify-content: center;
+            /* justify-content:flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: flex-start; */
+            /* justify-content: baseline; */
+            align-items: center;
+        
+        }
+        #main div{
+            width: 100px;
+            height: 50px;
+        }
+        #no2{
+            align-self: baseline;
+        }
+        .flex1 {
+            display: flex;
+            background-color: blueviolet;
+            /* flex-direction: column-reverse; */
+            /*flex-direction: row-reverse*/
+        }
+        .flex1 > div{
+            background-color: brown;
+             margin: 5px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>flex property</h1>
+    <h1>flex box is much more controlable and flexible to use compared to position</h1> <br>
+    <h2>flex-wrap gives it its original size and they won't be wrapped together</h2>
+    <div class="flex1" id="main">
+    <div  style="background-color:pink;">1</div>
+    
+    <div  style="background-color:dark gold ;" id="no2">2</div>
+    <div  style="background-color:aquamarine;">3</div>
+    <div  style="background-color:dark green ;">4</div>
+</div>
+
+</body>
+>>>>>>> 4887ab792076f732abb8ac272cf27c0442992ecd
 </html>
