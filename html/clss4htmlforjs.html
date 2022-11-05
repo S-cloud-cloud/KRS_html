@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the title</title>
+</head>
+<body>
+    <img id="image" src="pic2.jpg" alt="img1">
+    <!-- <img id="imgg" src="https://www.pexels.com/photo/people-walking-on-sidewalk-near-building-14270583/ " alt="img1"> -->
+
+    <h1>the heading </h1> 
+    <div id="main">
+        <p class="a">the Finding html element by tags</p> <br>
+        <p class="a">the summary:the document keyword and getElementById tag word  </p>
+        <p class="a">the Finding html element by tags</p> <br>
+        <p class="a">the summary:the document keyword and getElementById tag word  </p>
+<br>
+    </div>
+    <p id="demo"></p> <br>
+    <script>
+        // document.getElementById("demo").innerHTML="hi"   //using js 's dom manipulation now the p ele with demo id has now hi written in it's tag 
+        // const x = document.getElementById("main");
+        // const y = x.getElementsByTagName("p");
+        // y[0].innerHTML="change"    //this is not array because we can't perform opp of arry on it but u can apply the length operator : here y acts as an arry but is not an arry // replace div elements by change
+        // y[0].innerHTML=y.length // now change is replaced by 2 since length of y is 2 as it has 2 ele 
+
+     const z=document.getElementsByClassName("a")
+    //  z[0].innerHTML="change0"
+    //  z[1].innerHTML="change1"
+    for(var i=0;i<z.length;i++){
+        z[i].innerHTML="changeall"
+    }
+    
+
+    // document.getElementById("image").src="lapi.jpg"
+    var obj= document.getElementById("image")
+    obj.src="lapi.jpg"
+
+
+    </script>
+    
+</body>
+</html>
