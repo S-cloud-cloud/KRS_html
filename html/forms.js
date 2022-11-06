@@ -9,7 +9,7 @@ function printError(elemId, hintMsg) {
 function validateForm() {
   // Retrieving the values of form elements
   var form=document.getElementById("myform")
-  var name = form.fullname.value;
+  var name = form.name.value;
   var email = form.email.value;
   var mobile =form.mobile.value;
   var gender =form.gender.value;
@@ -38,7 +38,7 @@ function validateForm() {
   if (name == "") {
     printError("nameErr", "Please enter your name");
   } else {
-    var regex = /^[a-zA-Z\s]+$/;
+    var regex = /^[a-zA-Z\s]+$/;    //regular :regex
     if (regex.test(name) === false) {
       printError("nameErr", "Please enter a valid name");
     } else {
@@ -113,7 +113,7 @@ function validateForm() {
       gender +
       "\n";
     if (hobbies.length) {
-      dataPreview += "Hobbies: " + hobbies.join(", ");
+      dataPreview += "Hobbies: " + hobbies.join(", ");  //converts array to strings seperated by a comma
     }
     // Display input data in a dialog box before submitting the form
     alert(dataPreview);

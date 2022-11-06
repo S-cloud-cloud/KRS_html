@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="id1">MY heading 1</h1>
+    <!-- <button type="button" onclick="document.getElementById('id1').style.color='red'">click me</button> -->
+    <!-- <button type="button" onclick="change()" >click me</button> -->
+    <button type="button">click me</button>
+
+    <h2 id="id2" onclick=" document.getElementById('id2').style.color ='yellow'">MY heading 2 </h2>
+    <h2 id="id3" onmouseover=" document.getElementById('id3').style.color ='limegreen'">MY heading 2 </h2> 
+
+    <!-- <h3>javascript html events</h3> -->
+    <!-- enter ur name : <input type="text" id="fname" onchange="upperCase()"> -->
+    <!-- <p> function is triggered when u leave input field to convert into uppercase </p> -->
+
+    <div id="div1">
+        <p id="p1">this is a paragraph.</p>
+        <p id="p2">this is another paragraph.</p>
+</div>
+    <script>
+        // function upperCase(){
+            //const x = document.getElementById('fname');
+            //x.value = x.value.toupperCase();
+        // }
+        const para = document.createElement("p");
+        const node = document.createTextNode("this is new.");
+        const br = document.createElement("br")
+        const node2 = document.createTextNode("this is new.");
+
+        para.style.color="red"
+        para.appendChild(node);
+        para.appendChild(br);
+        para.appendChild(node2);
+        
+
+        const element = document.getElementById("div1");
+        const child = document.getElementById("p2");
+        element.appendChild(para);
+        element.insertBefore(para,child);
+        // element.removeChild(child);  removes p2
+        
+        // element.replaceChild(para,child);
+
+        //same as onclick but less vunreable
+        var elem = document.getElementById("id1");
+        elem.addEventListener('click',change)
+        elem.addEventListener('mouseover',change)
+
+
+        function change(){
+            document.getElementById('id1').style.color ='red'
+        }
+    </script>
+    
+</body>
+</html>
