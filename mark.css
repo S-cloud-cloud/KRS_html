@@ -1,0 +1,89 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 17px;
+    letter-spacing: 0.045em;
+}
+
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn svg rect {
+    stroke: #76afff;
+    opacity: 0.6;
+    stroke-width: 2;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn span {
+    background: rgb(255, 130, 130);
+    background: -moz-linear-gradient(left, #65dfc9 0%, #6cdbeb 100%);
+    background: -webkit-linear-gradient(left, #65dfc9 0%, #6cdbeb 100%);
+    background: linear-gradient(to right, #65dfc9 0%, #6cdbeb 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);}
+    
+
+.btn:hover svg rect {
+    stroke-width: 3;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+
+#svgTag {
+    width: 277px;
+    height: 62px;
+}
+
+.btnMobo {
+    display: none;
+}
+
+@media only screen and (max-width: 830px) {
+    .container {
+        display: none;
+    }
+    .btnMobo {
+        display: inline-block;
+        padding: 10px 20%;
+        background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+        border-radius: 10px;
+        z-index: 2;
+        backdrop-filter: blur(2rem);
+        border-style: solid;
+        border-width: 0px;
+        border-color: #76afff;
+    }
+    .btnMobo p {
+        font-size: 1.2em;
+        font-weight: bold;
+        background: rgb(255, 130, 130);
+        background: -moz-linear-gradient(left, #65dfc9 0%, #6cdbeb 100%);
+        background: -webkit-linear-gradient(left, #65dfc9 0%, #6cdbeb 100%);
+        background: linear-gradient(to right, #65dfc9 0%, #6cdbeb 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .btnMobo {
+        padding: 10px 25%;
+    }
+}

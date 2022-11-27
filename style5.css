@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.avatar, #avatarImgScr {
+    width: 200px;
+    height: 200px;
+}
+#tilte {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+h2, p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.glass {
+    background: white;
+    min-height: 90vh;
+    width: 60%;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+section {
+    display: block;
+}
+.selector {
+    width: 250px;
+    z-index: 1;
+}
+.dataDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+div {
+    display: block;
+}
+#name {
+    outline: none;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+    font-family: sans-serif;
+    border-width: 0px 0px 2px 0px;
+    border-color: transparent;
+    transition: all 0.3s;
+    text-transform: capitalize;
+}
+input[type="text" i] {
+    padding: 1px 2px;
+}
+input {
+    writing-mode: horizontal-tb !important;
+    font-style:normal;
+    /* font-variant-ligatures: ; */
+    /* font-variant-caps: ; */
+    /* font-variant-numeric: ; */
+    /* font-variant-east-asian: ; */
+    font-weight:bold;
+    /* font-stretch: ; */
+    /* font-size: ; */
+    /* font-family: ; */
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+#selectField {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: transparent;
+    transition: all 0.3s;
+}
+#selectField img {
+    width: 12px;
+}
+#list {
+    position: absolute;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 3;
+}
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.options {
+    position: relative;
+    width: 100%;
+    padding: 15px 0px 15px 70px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+.options img {
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    left: 25px;
+    pointer-events: none;
+}
+.avatar, #avatarImgScr {
+    width: 200px;
+    height: 200px;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 17px;
+    letter-spacing: 0.045em;
+}
+#svgTag {
+    width: 277px;
+    height: 62px;
+}
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+btn svg rect {
+    stroke: #76afff;
+    opacity: 0.6;
+    stroke-width: 2;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+   
+}
+
+
+btnMobo {
+    display: none;
+}
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    /* font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ; */
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+}
+.circle1, .circle2 {
+    background: white;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+#alertDiv {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.alert {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    padding: 10px 32px;
+    background: white;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 10px;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    margin-bottom: 10px;
+}

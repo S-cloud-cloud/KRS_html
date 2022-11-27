@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="stylesheet" href="style5.css" />
+    <link rel="stylesheet" href="select.css" />
+    <link rel="stylesheet" href="mark.css" />
+
+    <title>Avatar</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <!-- /*The <main> tag specifies the main content of a document. The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.*/ -->
+    <main>
+      <section class="glass">
+        <!-- Section tag defines the section of documents such as chapters, headers, footers or any other sections. The section tag divides the content into section and subsections. The section tag is used when requirements of two headers or footers or any other section of documents needed -->
+        <p id="tilte">
+          What does your Name say about your<br />
+          PERSONALITY ?
+        </p>
+        <div class="dataDiv">
+          <div>
+            <input
+              type="text"
+              name=""
+              id="name"
+              placeholder="Name"
+              autocomplete="off"
+            />
+          </div>
+          <div class="selector">
+            <div id="selectField" onclick="toggleSelectMenu()">
+              <p id="selectText">Gender</p>
+              <img src="arrow.png" alt="" srcset="" id="arrowIcon" />
+            </div>
+            <ul id="list" class="hide">
+              <li class="options" onclick="select(`Male`)">
+                <img src="boy.gif" alt="" srcset="" />
+                <p>Male</p>
+              </li>
+              <li class="options" onclick="select(`Female`)">
+                <img src="girlG.gif" alt="" srcset="" />
+                <p>Female</p>
+              </li>
+              <li class="options" onclick="select(`Others`)">
+                <img
+                  src="blue-gender-symbol-other-gender_277625-1823.webp"
+                  alt=""
+                  srcset=""
+                />
+                <p>Others</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="avatar">
+          <img src="girl.gif" alt="" id="avatarImgScr" />
+        </div>
+        <div class="container" onclick="onSubmit()">
+          <span class="btn">
+            <!-- The <svg> tag defines a container for SVG graphics. -->
+
+            <!-- SVG has several methods for drawing paths, boxes, circles, text, and graphic images. -->
+            <svg id="svgTag">
+              <!-- A gradient is a smooth transition from one color to another. In addition, several color transitions can be applied to the same element. -->
+
+              <!-- There are two main types of gradients in SVG: -->
+
+              <!-- Linear -->
+              <!-- Radial -->
+              <linearGradient id="grad1">
+                <stop offset="0%" stop-color="#FF8282"></stop>
+                <stop offset="100%" stop-color="#E178ED"></stop>
+              </linearGradient>
+              <rect
+                x="5"
+                y="5"
+                rx="25"
+                fill="none"
+                stroke="url(#grad1)"
+                width="266"
+                height="50"
+              ></rect>
+            </svg>
+            <span>See</span>
+          </span>
+        </div>
+        <button class="btnMobo" onclick="onSubmit()"><p>See</p></button>
+      </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div id="alertDiv">
+      <div class="alert h" id="alertSelect">
+        <p>Error: ...</p>
+      </div>
+    </div>
+
+    <script src="select.js"></script>
+    <script src="5script.js"></script>
+  </body>
+</html>
